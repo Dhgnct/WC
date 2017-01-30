@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Which contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link href="css/lib/bootstrap.min.css" rel="stylesheet">
+<link href="css/whichcontact-theme-style.css" rel="stylesheet">
+<link href="css/login-page-style.css" rel="stylesheet">
+<script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body style="background-color:white;">
+    <!-- ======================header============================= -->
+	
+		<!-- Header -->
+	<nav class="navbar navbar-inverse navbar-fixed-top indexHeader" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<!-- <a class="navbar-brand" href="#" id="logoColor"><span>Which</span>Contact</a> -->
+				<img src="images/logo3.png" id="logoImg"/>
+			</div>
+		</div>
+		<!--container-fluid -->
+	</nav>
+    
+    <!-- =============================================== LOGIN ============================================================== -->
+    <div class="container-fluid">
+        <div class="row" >
+			<div class="col-sm-12">
+				<img src="images/logoImage.png" class="indexImage">	
+				<div class="col-sm-4 login pull-right">
+					<form role="form" id="login" method="post">
+						<fieldset>
+							<h2 id="signIn">Sign In</h2>
+							<hr>
+							<div class="form-group">
+								<input type="email" name="email" id="email"
+									class="form-control input-lg" placeholder="Email Address">
+								<div id="emailError"></div>
+							</div>
+							<div class="form-group">
+								<input type="password" name="password" id="password"
+									class="form-control input-lg" placeholder="Password">
+								<div id="passwordError"></div>
+							</div>
+
+							<div class="row">
+								<a href="#" data-target="#pwdModal" data-toggle="modal"
+								class="btn btn-link pull-left">Forgot Password?</a>
+								<div class="col-xs-6 col-sm-6 col-md-6" id="loginDiv">
+                                <input type="submit" class="btn btn-lg success pull-right"
+                                    value="submit" id="loginbtn">
+                                    
+                            </div>
+                            
+                        </div>
+                        
+                            <a href="#" class="btn btn-link pull-right registerLink" data-color="info" data-target="#registerModal" data-toggle="modal">Register</a>
+
+						</fieldset>
+					</form>
+				</div>
+            </div>
+        </div>
+    </div>
+    <!--==================================Register  modal==================================================-->
+    <div id="registerModal" class="modal fade" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                
+                    <div class="col-md-10  col-md-offset-1">
+                        <div class="panel panel-default">
+                            
+
+                                <div class="panel-body">
+                                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×</button>
+                    <h1 class="text-center">Register</h1>
+                    <hr>
+                                    <form role="form" id="register" method="post">
+                                        <fieldset>
+                                            <div class="form-group">
+                                                
+                                                    <b class="register">Admin Email Id:</b>
+                                                
+                                                <input class="form-control input"
+                                                    placeholder="Enter Admin Email" name="Amail" id="Adminmail"
+                                                    type="email"><br>
+                                                
+                                                    <b class="register">Admin Password:</b>
+                                               
+                                                <input class="form-control input"
+                                                    placeholder="Enter Admin Password" name="APwd"
+                                                    id="AdminPwd" type="password"><br>
+                                              
+                                                    <b class="register">Name</b>
+                                                
+                                                <input class="form-control input" placeholder="Enter a Name"
+                                                    name="Name" id="name" type="text"><br>
+                                                
+                                                    <b class="register">Email Id:</b>
+                                                
+                                                <input class="form-control input"
+                                                    placeholder="Enter an Email" name="mail" id="mail"
+                                                    type="email"><br>
+                                                
+                                                    <b class="register">Password:</b>
+                                                
+                                                <input class="form-control input"
+                                                    placeholder="Enter a Password" name="Pwd" id="Pwd"
+                                                    type="password"><br>
+                                                    <b class="register">Security Question:</b>
+                                                
+                                                <input class="form-control input"
+                                                    placeholder="Security Question" name="security" id="security"
+                                                    type="text">
+                                            </div>
+                                            <input class="btn btn-lg btn-primary btn-block"
+                                                value="Create Account" type="submit" id="create"><br>
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+            
+    </div>
+    
+              
+                        <!--==================================forgot password modal==================================================-->
+						<div id="pwdModal" class="modal fade" tabindex="-1" role="dialog"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+
+
+									<div class="col-md-12">
+										<div class="panel panel-default">
+											<div class="panel-body">
+
+												<button type="button" class="close" data-dismiss="modal"
+													aria-hidden="true">×</button>
+
+												<h1 class="text-center">Change Password</h1>
+												<fieldset>
+													<div class="form-group">
+														<p>
+															<b class="forgotpassword">Security question:<br>What is your favourite
+																teacher's name?
+															</b>
+														</p>
+														<input class="form-control input"
+															placeholder="Your security answer" name="answer"
+															id="answer" type="text"><br>
+														<p>
+															<b class="forgotpassword">Enter your email:</b>
+														</p>
+														<input class="form-control input"
+															placeholder="Existing email" name="ex_email"
+															id="ex_email" type="email"><br>
+														<p>
+															<b class="forgotpassword" >Enter a new password:</b>
+														</p>
+														<input class="form-control input"
+															placeholder="New password" name="newPassword"
+															id="newPassword" type="password">
+													</div>
+													<div id="forgotpassworderror"></div>
+													<input class="btn btn-lg btn-primary btn-block"
+														value="Request for change  Password" type="button"
+														onclick="forgotPassword();" id="changePassword">
+												</fieldset>
+
+
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+<!-- --------------------------footer----------------------------------- -->
+
+	
+		<div class="col-lg-12">
+			<p class="navbar-brand Footer">Copyright © 2016 WhichContact All Rights Reserved</p>
+			
+		</div>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/login-validation.js"></script>
+   <script src="js/forgot-password.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/login-auth.js"></script>
+    <script src="js/registrationAjax.js"></script>
+    <script src="js/registration.js"></script>
+    <script src="js/userLogout.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+.header {
+	padding-top: 15px px;
+}
+
+.logoImage {
+	margin-top: -18px px;
+	width: 150px;
+}
+.registerLink{
+margin-top: 40px;
+}
+.navbar {
+	position: absolute;
+}
+
+.navbar-brand {
+	position: absolute;
+	display: block;
+}
+
+.headerButtons: hover {
+	background-color: #000;
+}
+
+.login{
+	background-color:#d2ebf9;
+	border-radius: 10px;
+	padding-left:25px;
+	padding-right:25px;
+	padding-bottom:25px;
+	box-shadow: 10px 10px 5px grey;
+	margin-top:120px;
+	margin-right:150px;
+}
+#loginDiv{
+	padding-right: 0px;
+}
+
+body {
+	
+	background-color:white;
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color:#e6e6e6;
+	
+}
+.footer_border{
+	border-top:3px black solid;
+	
+}
+header{
+	background-color:#e6e6e6;
+}
+
+hr{
+	border-color:black;
+	  
+
+}
+.colorgraph{
+	 border-width: medium;
+	
+}
+
+#passwordError {
+	max-width: 300px;
+	max-height: 20px;
+	overflow: hidden;
+}
+
+#emailError {
+	max-width: 300px;
+	max-height: 20px;
+	overflow: hidden;
+}
+
+#headerButton: hover, h2 {
+	color: #FFF;
+}
+
+.text-center {
+	text-align: center;
+}
+#signIn{
+	color:#990033;
+}
+.panel {
+    background-color: #fff;
+    border: 10px solid #cccccc;
+    border-radius: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+.indexImage{
+	max-height:700px;
+	max-width:600px;
+	position:absolute;
+	top:80px;
+}
+
+.success, .success:hover, .success:focus, .success:active, .success.active, .open > .dropdown-toggle.success, .success.disabled, .success[disabled], fieldset[disabled] .success, .success.disabled:hover, .success[disabled]:hover, fieldset[disabled] .success:hover, .success.disabled:focus, .success[disabled]:focus, fieldset[disabled] .success:focus, .success.disabled:active, .success[disabled]:active, fieldset[disabled] .success:active, .success.disabled.active, .success.active[disabled], fieldset[disabled] .success.active {
+    background-color: #214081;
+    border-color: #214081;
+	color:white;
+}
+.forgotpassword{
+	color:black;
+}
+.register{
+	color:black;
+}
+@media (min-width: 1156px) and (max-width: 1311px) {
+    .login{               
+        margin-right:100px;
+    }
+}
+@media (min-width: 1130px) and (max-width: 1156px) {
+    .login{               
+        margin-right:100px;
+    }
+	.indexImage{
+		height:400px;
+	width:550px;
+	}
+}
+@media (min-width: 1000px) and (max-width: 1130px) {
+    .login{               
+        margin-right:100px;
+    }
+	.indexImage{
+		height:350px;
+	width:500px;
+	}
+}
+@media (min-width: 850px) and (max-width: 1000px) {
+    .login{               
+        margin-right:100px;
+    }
+	.indexImage{
+		height:350px;
+	width:430px;
+	}
+}
+@media (min-width: 774px) and (max-width: 850px) {
+    .login{               
+        margin-right:80px;
+    }
+	.indexImage{
+		height:350px;
+	width:390px;
+	}
+}
+@media (min-width: 650px) and (max-width: 774px) {
+    .login{               
+		margin-right:150px;
+    }
+}
+@media (min-width: 500px) and (max-width: 650px) {
+    .login{               
+		margin-right:100px;
+    }
+	.indexImage{
+		height:350px;
+	width:500px;
+	}
+}
+@media (min-width: 250px) and (max-width: 500px) {
+    .login{               
+		margin-right:60px;
+    }
+	.indexImage{
+	height:300px;
+	width:450px;
+	}
+}
+html{
+	background-color:white;
+}
+.Footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	 background-color: #0b3c5d;
+	width: 100%;
+	color: white;
+	text-align: left;
+	margin-bottom: -10px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+}

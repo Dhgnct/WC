@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WhichContact</title>
+<link href="css/lib/bootstrap.min.css" rel="stylesheet">
+<link href="css/whichcontact-theme-style.css" rel="stylesheet">
+<!--Icons-->
+<script src="js/lib/glyphs.js"></script>
+</head>
+
+<body>
+	<!-- Header -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<img src="images/logo3.png" id="logoImg"/>
+				<!-- <a class="navbar-brand" href="#" id="logoColor"><span>Which</span>Contact</a> -->
+				<ul class="user-menu">
+					<li class="dropdown pull-right"><a href="#"
+						class="dropdown-toggle" data-toggle="dropdown"> <svg
+								class="glyph stroked male-user">
+                           <use xlink:href="#stroked-male-user"></use>
+                        </svg> Admin <span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="profile.html" target="_self "> <svg
+										class="glyph stroked male-user">
+                                 <use xlink:href="#stroked-male-user"></use>
+                              </svg> Profile
+							</a></li>
+
+							<li><a href="index.html" id="logout" target="_self"> <svg
+										class="glyph stroked cancel">
+                                 <use xlink:href="#stroked-cancel"></use>
+                              </svg> Logout
+							</a></li>
+						</ul></li>
+				</ul>
+			</div>
+		</div>
+		<!--container-fluid -->
+	</nav>
+	<!--nav -->
+	<ul id="menu" class="menu-fixed">
+    <li><a href="connections.html" target="_self" id="firstMenu">
+		<svg class="glyph stroked male user ">
+					<use xlink:href="#stroked-male-user" />
+					</svg> <span class="menuSpan">Connections</span></a>
+					<ul id="menuOptions">
+					<li><a href='#'>Add Connections</a></li>
+					<li><a href='#'>Keep in Touch</a></li>
+					</ul>
+	</li>
+    <li>
+        <a href="company-details.html" target="_self"  class="menuLink"><svg class="glyph stroked line-graph">
+                   <use xlink:href="#stroked-line-graph"></use>
+                   </svg><span class="menuSpan">Companies</span></a>
+        
+    </li>
+    
+</ul>
+	<div id="wrap">
+		<!--sidebar-->
+		
+
+		<!--Information pane-->
+		<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+
+			<!-- <div class="row">
+				<div class="col-lg-12">
+					<h1 class="page-header">Admin</h1>
+				</div>
+			</div> -->
+			<!--row-->
+
+			<div class="row" id="adminInfo">
+				<div class="col-lg-2 ">
+					<div class="adminImageBack">
+						<img src="images/faces/images7.jpg" class="adminImage"></img>
+					</div>
+				</div>
+				<div class="col-lg-10">
+					<p id="AdminName">
+					<h3>Administrator</h3>
+					</p>
+					<p id="AdminComp">XYZ PVT LTD</p>
+					<p id="AdminEmailId">admin@test.com</p>
+					<p id="AdminContact">+91-9900112256</p>
+				</div>
+			</div>
+			<!--row-->
+
+			<div class="row" id="socialIcons">
+				<div class="col-xs-12 col-md-6 col-lg-3" >
+					<div class="panel panel-widget ">
+						<div class="row no-padding">
+							<div class="col-sm-3 col-lg-5 widget-left">
+								<img src="images/FB.png" id="fb" />
+							</div>
+							<div class="col-sm-9 col-lg-7 widget-right">
+								<div class="large">0</div>
+								<div class="text-muted">new contacts</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				<div class="col-xs-12 col-md-6 col-lg-3">
+					<div class="panel panel-widget">
+						<div class="row no-padding">
+							<div class="col-sm-3 col-lg-5 widget-left">
+								<img src="images/LinkedIn.jpg" id="ln" />
+							</div>
+							<div class="col-sm-9 col-lg-7 widget-right">
+								<div class="large">0</div>
+								<div class="text-muted">new contacts</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col-xs-12 col-md-6 col-lg-3">
+					<div class="panel  panel-widget">
+						<div class="row no-padding">
+							<div class="col-sm-3 col-lg-5 widget-left">
+								<img src="images/twitter.png" id="twitter" />
+							</div>
+							<div class="col-sm-9 col-lg-7 widget-right">
+								<div class="large">0</div>
+								<div class="text-muted">new contacts</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<div class="col-xs-12 col-md-6 col-lg-3">
+					<div class="panel panel-widget">
+						<div class="row no-padding">
+							<div class="col-sm-3 col-lg-5 widget-left">
+								<img src="images/gPlus.png" id="gPlus" />
+							</div>
+							<div class="col-sm-9 col-lg-7 widget-right">
+								<div class="large">0</div>
+								<div class="text-muted">new contacts</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--row-->
+
+			
+		</div>
+
+		<!-- </div>-->
+	</div>
+	<!--main div-->
+
+
+	<!-- --------------------------footer----------------------------------- -->
+
+	
+		<div class="col-lg-12">
+			<p class="navbar-brand Footer">Copyright © 2016 WhichContact All Rights Reserved</p>
+			<div class="navbar-brand dashboardFooterAboutUs">
+				<a href="about.html" ><u>About Us</u></a>
+			</div>
+		</div>
+	
+
+	<script src="js/lib/jquery-1.11.1.min.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
+	<script src="js/lib/bootstrap-table.js"></script>
+	<script src="js/logout.js"></script>
+</body>
+
+</html>

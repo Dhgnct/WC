@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WhichContact</title>
+<link href="css/lib/bootstrap.min.css" rel="stylesheet">
+<link href="css/whichcontact-theme-style.css" rel="stylesheet">
+<link href="css/hover-effects.css" rel="stylesheet">
+<!--Icons-->
+<script src="js/lib/glyphs.js"></script>
+<link rel="stylesheet" href="css/browse-button.css">
+</head>
+<body>
+	<!-- Header -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<!-- <a class="navbar-brand" href="#" id="logoColor"><span>Which</span>Contact</a> -->
+				<img src="images/logo3.png" id="logoImg"/>
+				<ul class="user-menu">
+					<li class="dropdown pull-right"><a href="#"
+						class="dropdown-toggle" data-toggle="dropdown"> <svg
+								class="glyph stroked male-user">
+								<use xlink:href="#stroked-male-user"></use>
+							</svg> Admin <span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="profile.html" target="_self"> <svg
+										class="glyph stroked male-user">
+                                 <use xlink:href="#stroked-male-user"></use>
+                              </svg> Profile
+							</a></li>
+
+							<li><a href="index.html" id="logout" target="_self"> <svg
+										class="glyph stroked cancel">
+                                 <use xlink:href="#stroked-cancel"></use>
+                              </svg> Logout
+							</a></li>
+						</ul></li>
+				</ul>
+			</div>
+		</div>
+		<!--container-fluid -->
+		
+	</nav>
+	<!--nav -->
+	<ul id="menu" class="menu-fixed">
+    <li><a href="connections.html" target="_self" class="firstMenu">
+		<svg class="glyph stroked male user ">
+					<use xlink:href="#stroked-male-user" />
+					</svg> <span class="menuSpan">Connections</span></a>
+					<ul class="menuOptions">
+					<li style="padding-top:11px;"><span class="btn btn-link btn-file">
+			Add Connections <input type="file" id="fileUpload" name="fileUpload">
+		</span></li>
+					<li><span class="btn btn-link">Keep in Touch</span></li>
+					</ul>
+	</li>
+    <li>
+        <a href="company-details.html" target="_self"  class="menuLink firstMenu"><svg class="glyph stroked line-graph">
+                   <use xlink:href="#stroked-line-graph"></use>
+                   </svg><span class="menuSpan">Companies</span>
+		</a>
+        <ul class="menuOptions">
+					<li  style="padding-top:11px; margin-left:45px;"><a class="btn btn-link btn-file pstnOfTxtTopCmpny"  style="padding-left:19px;" href="top-company-details.html">
+			Top Companies
+		</a></li>
+					</ul>
+    </li>
+    
+</ul>
+	
+	<!--sidebar-->
+	
+	<!--Information pane-->
+		<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="page-header"><u>Which Contact:</u></h1>
+				</div>
+			</div>
+			<!--row-->
+
+			<div class="row">
+				<div class="col-lg-12">
+					<h4 class="paragraph-header first_letter">People have a lot of contacts today via social networking tools. 
+						People in the past particularly in the sales area maintained rolodexes with their contacts. 
+						However no one today offers a service that enhances the information about your contacts or your company’s employee’s contacts.
+						<br><b>WhichContact</b> provides such a service and helps in enhancing the contacts information.<br><br>
+						<span>This enhancement of the information of your contacts would help in the following ways:</span>
+<br>2.	How well funded is the company 
+<br>3.	How long has the person been at the company 
+<br>4.	How senior a role does the person have
+<br>5.	How many other people are at the company that are second degree contacts of yours ( contacts of your contacts)
+<br>6.	Industry focus of the company 
+<br>7.	Industry focuses that the contact has had over his/her career
+<br>8.	Strength of your relationship to the contact
+<br>9.	Alerts when the persons profile changes ( new job)
+<br>10.	Geographic locations for jobs contact has 
+<br>11.	Geographic locations for the companies 
+<br>12.	Schools attended 
+<br>13.	Interests of the person</h4>
+
+				</div>
+			</div>
+		</div>
+	
+	
+	<!-- --------------------------footer----------------------------------- -->
+   
+	
+		<div class="col-lg-12">
+			<p class="navbar-brand Footer">Copyright © 2016 WhichContact All Rights Reserved</p>
+			<div class="navbar-brand dashboardFooterAboutUs">
+				<a href="about.html" ><u>About Us</u></a>
+			</div>
+		</div>	
+	
+
+	<script src="js/lib/jquery-1.11.1.min.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/logout.js"></script>
+</body>
+</html>
